@@ -1,0 +1,10 @@
+header:
+  version: 17
+  includes:
+    - kas/include/swupdate-oe4t.yml
+    - kas/include/scarthgap-l4t-r35.x.yml
+
+repos:
+  meta-cti:
+
+machine: cti-orin-nx-8gb-hadron-dm
