@@ -2,12 +2,16 @@ header:
   version: 17
   includes:
     - repo: tegra-demo-distro-master
-      file: layers/meta-tegrademo/dynamic-layers/meta-swupdate/conf/kas/swupdate-oe4t.yml 
+      file: layers/meta-tegrademo/conf/kas/include/tegra-demo-distro-common.yml
+    - repo: tegra-demo-distro-master
+      file: layers/meta-tegrademo/conf/kas/include/tegra-demo-distro-poky.yml
+    - repo: tegra-demo-distro-master
+      file: layers/meta-tegrademo/dynamic-layers/meta-swupdate/conf/kas/include/swupdate-base.yml
 
 repos:
   tegra-demo-distro-master:
-    url: https://github.com/OE4T/tegra-demo-distro.git
-    branch: master
+    url: https://github.com/Trellis-Logic/tegra-demo-distro.git
+    branch: master+kas-fixes
     layers:
       layers/meta-tegra-suppport: disabled
       layers/meta-tegrademo: disabled
